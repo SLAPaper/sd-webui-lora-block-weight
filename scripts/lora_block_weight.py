@@ -203,8 +203,8 @@ class Script(modules.scripts.Script):
         savetext.click(fn=savepresets,inputs=[lbw_loraratios],outputs=[])
         openeditor.click(fn=openeditors,inputs=[d_true],outputs=[])
 
-        e_reloadtext.click(fn=reloadpresets,inputs=[d_false],outputs=[elemental])
-        e_savetext.click(fn=savepresets,inputs=[elemental,d_false],outputs=[])
+        e_reloadtext.click(fn=reloadpresets,inputs=[],outputs=[elemental])
+        e_savetext.click(fn=savepresets,inputs=[elemental],outputs=[])
         e_openeditor.click(fn=openeditors,inputs=[d_false],outputs=[])
 
         def urawaza(active):
